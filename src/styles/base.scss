@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Importing Colors //
+$primary_color: #BF6DFF;
+$secondary_color: #0CCCFB;
+$base_color: black;
+
+$gradient_color: linear-gradient(to right, $primary_color, $secondary_color);
+
+// Importing Fonts //
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-Regular") format("truetype");
+}
+  
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../assets/fonts/Montserrat-Medium") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("../assets/fonts/Montserrat-SemiBold") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../assets/fonts/Montserrat-Bold") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+// font-family: 'Montserrat', sans-serif; //
+
+$primary_font: 'Montserrat';
+
+h1, h2, h3, h4, h5, h6, a, p {
+    font-family: $primary_font;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $primary_color;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 2rem;
+
+    sb {
+        font-weight: 600;
+    }
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+

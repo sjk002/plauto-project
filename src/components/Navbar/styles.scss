@@ -1,0 +1,10 @@
+@import '../../styles/base.scss';
+
+nav {
+    padding: 2rem 8vw;
+
+    > img {
+        width: 10vw;
+        object-fit: contain;
+    }
+}
