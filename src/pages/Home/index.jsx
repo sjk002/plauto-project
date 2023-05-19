@@ -50,6 +50,7 @@ function Home() {
             <div className='button'>
                 <h3>Register for Beta</h3>
             </div>
+            <h3>Created by UCSD Students</h3>
         </div>
     </div>
   )
