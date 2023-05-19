@@ -1,17 +1,15 @@
 import './styles/main.scss'
 import Home from './pages/Home'
-import ReactGA4 from 'react-ga4';
+import ReactGA from 'react-ga4';
 import { useEffect } from 'react'
 
 function App() {
 
   useEffect(() => {
 
-    const MEASUREMENT_ID = 'G-QZ64B65MGY';
-
-    ReactGA4.initialize(MEASUREMENT_ID);
-
-    ReactGA4.pageview('/')
+    const TRACKING_ID = 'G-QZ64B65MGY';
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.send({ hitType: 'pageview', page: "/" });
   }, [])
 
   return (
