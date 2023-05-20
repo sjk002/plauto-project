@@ -1,16 +1,16 @@
 import './styles/main.scss'
 import Home from './pages/Home'
 import ReactGA from 'react-ga4';
+import TagManager from 'react-gtm-module';
 import { useEffect } from 'react'
 
+const tagManagerArgs = {
+  gtmId: 'GTM-59CLCHN'
+}
+
+TagManager.initialize(tagManagerArgs)
+
 function App() {
-
-  useEffect(() => {
-
-    const TRACKING_ID = 'G-QZ64B65MGY';
-    ReactGA.initialize(TRACKING_ID);
-    ReactGA.send({ hitType: 'pageview', page: "/" });
-  }, [])
 
   return (
     <>
