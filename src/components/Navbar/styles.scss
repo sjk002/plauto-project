@@ -3,8 +3,25 @@
 nav {
     padding: 2rem 8vw;
 
-    > img {
+    @media screen and (max-width: $mobile) {
+        padding: 4rem 8vw;
+    }
+
+    > .words {
         width: 10vw;
         object-fit: contain;
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+        
+    }
+    > .square {
+        display: none;
+
+        @media screen and (max-width: $mobile) {
+            display: flex;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }

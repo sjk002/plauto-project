@@ -7,8 +7,13 @@ body {
 $primary_color: #BF6DFF;
 $secondary_color: #0CCCFB;
 $base_color: black;
+$gray_color: #7a7a7a;
 
 $gradient_color: linear-gradient(to right, $primary_color, $secondary_color);
+
+// Responsiveness //
+$mobile: 600px;
+$desktop: 960px;
 
 // Importing Fonts //
 @font-face {
@@ -43,19 +48,52 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 h1 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: $primary_color;
+
+    @media screen and (max-width: $desktop) {
+        font-size: 3rem;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 2rem;
+    }
 }
 
 h2 {
     font-weight: 400;
     font-style: italic;
     font-size: 3rem;
+    
+    @media screen and (max-width: $desktop) {
+        font-size: 2.5rem;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 2rem;
+    }
 }
 
 h3 {
     font-weight: 600;
     font-size: 2rem;
+
+    > mo {
+        display: none;
+    }
+
+    @media screen and (max-width: $desktop) {
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: $mobile) {
+
+        > de {
+            display: none;
+        }
+        > mo {
+            display: flex;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
 }
 
 h5 {
@@ -65,11 +103,21 @@ h5 {
     sb {
         font-weight: 600;
     }
+    @media screen and (max-width: $desktop) {
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 1.25rem;
+    }
 }
 
 p {
     font-weight: 400;
     font-size: 1.25rem;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1rem;
+    }
 }
 
 

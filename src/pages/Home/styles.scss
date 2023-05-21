@@ -9,17 +9,48 @@
         flex-direction: column;
         align-items: center;
         padding: 0 16vw;
-        min-height: 70vh;
 
         text-align: center;
 
+        @media screen and (max-width: $mobile) {
+            align-items: flex-start;
+            text-align: left;
+            padding: 0 8vw;
+        }
+
         > img {
-            width: 12vw;
+            width: 16vw;
             object-fit: contain;
             margin-bottom: 2rem;
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+    
+        }
+        > h1 {
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
         }
         > h3 {
             margin: 1.5rem 0;
+
+            @media screen and (max-width: $mobile) {
+                margin: 0.5rem 0;
+
+                > mo {
+                    margin: 0.5rem 0 1rem;
+                }
+            }
+        }
+        > .arrow_down {
+            display: none;
+
+            @media screen and (max-width: $mobile) {
+                display: flex;
+                margin: 4rem auto 0;
+            }
         }
     }
     > .steps {
@@ -28,22 +59,147 @@
         align-items: center;
         padding: 4rem 16vw;
 
+        @media screen and (max-width: $mobile) {
+            padding: 2rem 8vw;
+        }
+
         > .block {
             display: flex;
             flex-direction: row;
             align-items: center;
             padding: 2rem 0;
+            margin-bottom: 2rem;
+
+            @media screen and (max-width: $mobile) {
+                margin-bottom: 0;
+            }
 
             > img {
                 width: 12vw;
                 object-fit: contain;
+
+                @media screen and (max-width: $desktop) {
+                    font-size: 1.5rem;
+                }
+                @media screen and (max-width: $mobile) {
+                    width: 6rem;
+                }
             }
             > .first {
                 margin-right: 2rem;
             }
         }
+        > .border {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            filter: box-shadow(20px, 20px, 20px,black);
+            width: 100%;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+
+            > h2 {
+                font-style: normal;
+                font-weight: 700;
+                color: $primary_color;
+                text-align: center;
+                margin-bottom: 4rem;
+
+                > g {
+                    background: -webkit-linear-gradient(45deg, $primary_color, $secondary_color);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            > .inner {
+                border: 1px solid $primary_color;
+                border-radius: 6px;
+                width: 100%;
+
+                >.container {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2rem;
+
+                    > h3 {
+                        margin: 2rem 0;
+                    }
+                    > .bullet {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-bottom: 1rem;
+
+                        > .rectangle {
+                            width: 2rem;
+                            height: 2rem;
+                            border: 2px solid $primary_color;
+                            border-radius: 8px;
+                            margin-right: 1rem;
+                        }
+                    }
+                    > .button {
+                        display: flex;
+                        align-self: flex-end;
+                        background: $gradient_color;
+                        border-radius: 1rem;
+                        padding: 1.5rem;
+                        margin-top: 4rem;
+
+                        > h3 {
+                            font-weight: 700;
+                            color: white;
+                            margin: auto;
+                        }
+                    }
+                }
+                > p {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin: 3rem 4rem 4rem;
+                }
+            }
+            > .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                > .docs {
+                    width: max(10vw, 5rem);
+                    object-fit: contain;
+                }
+                > .arrow_right {
+                    width: 10vw;
+                    object-fit: contain;
+                    margin: 0 2rem;
+                }
+                > .inner {
+                    border: 1px solid $primary_color;
+                    border-radius: 6px;
+                    width: 100%;
+                    padding: 4rem;
+
+                    > p {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $gray_color;
+
+                        > bb {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
         > h5 {
             text-align: center;
+            margin-top: 4rem;
         }
     }
     > .register {
@@ -51,6 +207,10 @@
         flex-direction: column;
         align-items: center;
         padding: 4rem 16vw;
+
+        @media screen and (max-width: $mobile) {
+            padding: 2rem 8vw;
+        }
 
         > .border {
             display: flex;
@@ -62,12 +222,20 @@
             background: linear-gradient(white, white) padding-box,
                 $gradient_color border-box;
             padding: 3rem 0;
+            text-align: center;
 
+            @media screen and (max-width: $mobile) {
+                padding: 2rem 0;
+            }
+            > h1 {
+                margin: 0 1rem;
+            }
             > h2 {
-                margin: 2rem 0;
+                margin: 1rem 1rem;
             }
             > h3 {
                 font-weight: 400;
+                margin: 0 1rem;
             }
         }
         > img {
@@ -80,6 +248,7 @@
             border-radius: 1rem;
             padding: 1.5rem;
             margin-bottom: 4rem;
+            cursor: pointer;
 
             > h3 {
                 font-weight: 700;
