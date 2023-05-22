@@ -6,10 +6,13 @@ body {
 // Importing Colors //
 $primary_color: #BF6DFF;
 $secondary_color: #0CCCFB;
+$circle_color: #FFC1F1;
 $base_color: black;
 $gray_color: #7a7a7a;
 
 $gradient_color: linear-gradient(to right, $primary_color, $secondary_color);
+$circle_gradient: linear-gradient(to right, white, $circle_color);
+$circle_gradient_left: linear-gradient(to left, white, $circle_color);
 
 // Responsiveness //
 $mobile: 600px;
@@ -40,10 +43,11 @@ $desktop: 960px;
 
 $primary_font: 'Montserrat';
 
-h1, h2, h3, h4, h5, h6, a, p {
+h1, h2, h3, h4, h5, h6, a, p, div, img {
     font-family: $primary_font;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 h1 {

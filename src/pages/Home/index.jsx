@@ -2,7 +2,6 @@ import React from 'react'
 import './styles.scss'
 
 import { TypeAnimation } from 'react-type-animation'
-import TagManager from 'react-gtm-module'
 
 import WinkIcon from '../../assets/images/wink_icon.png'
 import UploadIcon from '../../assets/images/upload_icon.png'
@@ -18,6 +17,7 @@ function Home() {
     <div className='home'>
         <Navbar />
         <div className="landing">
+            <div className="circle" />
             <img src={WinkIcon} alt="Winking Icon" />
             <h1>Plan Automatically</h1>
             <h3>
@@ -34,6 +34,7 @@ function Home() {
         </div>
         <div className="steps">
             <div className="block">
+                <div className="circle" />
                 <img src={UploadIcon} alt="Upload Icon" className='first' />
                 <h5><sb>INPUT</sb> your projects along with their deadlines</h5>
             </div>
@@ -67,6 +68,7 @@ function Home() {
                 </div>
             </div>
             <div className="block">
+                <div className="circle left" />
                 <h5 className='first'>Plauto will <sb>AUTOMATE</sb> a plan for you to start your work!</h5>
                 <img src={Docs} alt="Upload Icon" />
             </div>
@@ -99,14 +101,18 @@ function Home() {
                         <div className='button'>
                             <h3>Adjust Timeline</h3>
                         </div>
+                        <img src={ArrowDown} alt="" />
                     </div>
                 </div>
             </div>
-            <h5>
-                But that's not all - we give you the <sb>FREEDOM</sb> to make 
-                adjustments according to your own schedule 
-                and adapt to any unexpected changes. 
-            </h5>
+            <div className="block mtop">
+                <div className="circle" />
+                <h5>
+                    But that's not all - we give you the <sb>FREEDOM</sb> to make 
+                    adjustments according to your own schedule 
+                    and adapt to any unexpected changes. 
+                </h5>
+            </div>
         </div>
         <div className="register">
             <div className="border">
@@ -114,7 +120,10 @@ function Home() {
                 <h2>Starting Point is Key to Success.</h2>
                 <h3>And we are here to help you get started!</h3>
             </div>
-            <img src={ArrowDown} alt="" />
+            <div className="container">
+                <img src={ArrowDown} alt="" />
+                <h2 className='caption' >"Go Plauto it!"</h2>
+            </div>
             <a 
                 className='register_button'
             >
