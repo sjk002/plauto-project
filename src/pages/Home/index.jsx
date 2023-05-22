@@ -2,6 +2,7 @@ import React from 'react'
 import './styles.scss'
 
 import { TypeAnimation } from 'react-type-animation'
+import TagManager from 'react-gtm-module'
 
 import WinkIcon from '../../assets/images/wink_icon.png'
 import UploadIcon from '../../assets/images/upload_icon.png'
@@ -114,7 +115,9 @@ function Home() {
                 <h3>And we are here to help you get started!</h3>
             </div>
             <img src={ArrowDown} alt="" />
-            <a className='button'>
+            <a 
+                className='register_button'
+            >
                 <h3>Register for Beta</h3>
             </a>
             <h3>Created by UCSD Students</h3>
