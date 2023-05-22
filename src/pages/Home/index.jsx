@@ -126,6 +126,8 @@ function Home() {
             </div>
             <a 
                 className='register_button'
+                target='_blank'
+                href='https://docs.google.com/forms/d/e/1FAIpQLSeVpaCvOOWIj2yaU86T3Vy191-yD9WXLGdhFsFnZYM7qSWU2A/viewform'
             >
                 <h3>Register for Beta</h3>
             </a>
