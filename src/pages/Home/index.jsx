@@ -61,7 +61,11 @@ function Home() {
                 way you manage projects
             </h5>
             <img src={LongDownArrow} alt="long down arrow" />
-            <a className="register_button">
+            <a 
+                className="register_button"
+                target='_blank'
+                href='https://forms.gle/f4tNFfZZoDBqMk25A'
+            >
                 <h3>Register for Beta</h3>
             </a>
             <h3>Created by UC San Diego students</h3>
