@@ -8,7 +8,7 @@ nav {
     }
 
     > .words {
-        width: 10vw;
+        width: 12vw;
         object-fit: contain;
         @media screen and (max-width: $mobile) {
             display: none;

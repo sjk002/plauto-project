@@ -4,15 +4,13 @@ body {
 }
 
 // Importing Colors //
-$primary_color: #BF6DFF;
-$secondary_color: #0CCCFB;
-$circle_color: #FFC1F1;
-$base_color: black;
-$gray_color: #7a7a7a;
+$primary_color: #F39C57;
+$secondary_color: #F5F9FF;
+$base_color: #423C42;
 
-$gradient_color: linear-gradient(to right, $primary_color, $secondary_color);
-$circle_gradient: linear-gradient(to right, white, $circle_color);
-$circle_gradient_left: linear-gradient(to left, white, $circle_color);
+$g-color1: #18459A;
+$g-color2: $primary_color;
+$gradient_color: linear-gradient(to right, $g-color1, $g-color2);
 
 // Responsiveness //
 $mobile: 600px;
@@ -45,6 +43,7 @@ $primary_font: 'Montserrat';
 
 h1, h2, h3, h4, h5, h6, a, p, div, img {
     font-family: $primary_font;
+    color: $base_color;
     margin: 0;
     padding: 0;
     position: relative;
@@ -52,12 +51,8 @@ h1, h2, h3, h4, h5, h6, a, p, div, img {
 
 h1 {
     font-weight: 700;
-    font-size: 3.5rem;
-    color: $primary_color;
+    font-size: 4vw;
 
-    @media screen and (max-width: $desktop) {
-        font-size: 3rem;
-    }
     @media screen and (max-width: $mobile) {
         font-size: 2rem;
     }
@@ -66,11 +61,8 @@ h1 {
 h2 {
     font-weight: 400;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 3vw;
     
-    @media screen and (max-width: $desktop) {
-        font-size: 2.5rem;
-    }
     @media screen and (max-width: $mobile) {
         font-size: 2rem;
     }
@@ -78,15 +70,12 @@ h2 {
 
 h3 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2vw;
 
     > mo {
         display: none;
     }
 
-    @media screen and (max-width: $desktop) {
-        font-size: 1.5rem;
-    }
     @media screen and (max-width: $mobile) {
 
         > de {
@@ -101,15 +90,13 @@ h3 {
 }
 
 h5 {
-    font-weight: 500;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 2vw;
 
     sb {
         font-weight: 600;
     }
-    @media screen and (max-width: $desktop) {
-        font-size: 1.5rem;
-    }
+    
     @media screen and (max-width: $mobile) {
         font-size: 1.25rem;
     }
@@ -117,7 +104,7 @@ h5 {
 
 p {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5vw;
 
     @media screen and (max-width: $mobile) {
         font-size: 1rem;
